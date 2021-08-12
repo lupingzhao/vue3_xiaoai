@@ -1,0 +1,46 @@
+// 步骤条
+.about-step {
+    .el-step__main {
+        .el-step__description {
+            margin-top: 5px !important;
+        }
+    }
+}
+
+// 级联选择 地址编辑
+.about-add-cascader {
+    .el-cascader {
+        width: 100%;
+    }
+}
+
+.about-ipt {
+    .el-input__inner {
+        height: 32px;
+        line-height: 32px;
+    }
+}
+
+// 分类标签
+.el-tabs__nav {
+    z-index: 0 !important;
+}
+
+// 商品分类
+.about-ctate {
+    .el-table__expanded-cell {
+        padding: 0 !important;
+    }
+}
+
+// 订单物流
+.about-oder {
+    .el-step {
+        .el-step__head {
+            color: grey !important;
+            border-color: grey !important;
+
+        }
+    }
+
+}
