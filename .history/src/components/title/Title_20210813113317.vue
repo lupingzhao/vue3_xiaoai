@@ -135,11 +135,8 @@ export default defineComponent({
         })
         onMounted(() => {
             getData()
-            // console.log(a.value);
-            // console.log(store.state.user);
         })
         return {
-            a,
             title,
             selectIndex,
             swich,

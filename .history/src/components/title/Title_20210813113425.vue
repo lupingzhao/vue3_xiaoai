@@ -135,8 +135,8 @@ export default defineComponent({
         })
         onMounted(() => {
             getData()
-            // console.log(a.value);
-            // console.log(store.state.user);
+            console.log(a.value);
+            console.log(store.state.user);
         })
         return {
             a,

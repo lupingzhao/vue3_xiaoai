@@ -26,13 +26,12 @@
 </template>
 
 <script lang="ts">
-import { computed, defineComponent, onMounted, ref, watch } from 'vue'
+import { defineComponent, onMounted, ref, watch } from 'vue'
 import router from '@/router'
 import { useRoute, useRouter } from 'vue-router'
 import { ElMessage } from 'element-plus'
 import { isEqual, uniqWith } from 'lodash'
 import { useClickOutside } from '@/hooks/useCliskOutside'
-import store from '@/store'
 interface titleObj {
     name: string
     path: string
@@ -128,18 +127,10 @@ export default defineComponent({
             show.value = val
         })
 
-
-        // 计算
-        let a = computed(() => {
-            return store.state.user
-        })
         onMounted(() => {
             getData()
-            // console.log(a.value);
-            // console.log(store.state.user);
         })
         return {
-            a,
             title,
             selectIndex,
             swich,

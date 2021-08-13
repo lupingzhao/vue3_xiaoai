@@ -4,11 +4,7 @@ export default createStore({
   state: {
     user: localStorage.getItem('user')
   },
-  mutations: {
-    setUser(state, data) {
-      state.user = data
-    }
-  },
+  mutations: {},
   actions: {},
   modules: {},
 });

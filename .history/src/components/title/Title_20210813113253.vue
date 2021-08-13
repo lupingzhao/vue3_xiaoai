@@ -32,7 +32,6 @@ import { useRoute, useRouter } from 'vue-router'
 import { ElMessage } from 'element-plus'
 import { isEqual, uniqWith } from 'lodash'
 import { useClickOutside } from '@/hooks/useCliskOutside'
-import store from '@/store'
 interface titleObj {
     name: string
     path: string
@@ -130,16 +129,11 @@ export default defineComponent({
 
 
         // 计算
-        let a = computed(() => {
-            return store.state.user
-        })
+        let a = computed(() => { })
         onMounted(() => {
             getData()
-            // console.log(a.value);
-            // console.log(store.state.user);
         })
         return {
-            a,
             title,
             selectIndex,
             swich,

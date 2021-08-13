@@ -144,7 +144,6 @@
 
         <!-- 编辑弹框 -->
         <div>
-            <!-- 将dialog拆分成子组件需要在子组件监听两个值 同时修改 父组件控制dialog的显示的值 与子组件本质控制显示与否的值 -->
             <el-dialog title="编辑分类" v-model="dialog" width="35%">
                 <el-form :model="Form" :rules="rules" label-width="80px" class="demo-ruleForm">
                     <el-form-item label="活动名称" prop="name">
