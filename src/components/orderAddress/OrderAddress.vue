@@ -81,8 +81,8 @@ export default defineComponent({
             ctx.emit('update:address', false)
         }
         let blur = () => {
-            console.log(cascader.value);
-            console.log(467758);
+            // console.log(cascader.value);
+            // console.log(467758);
 
         }
 

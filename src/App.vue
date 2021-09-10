@@ -20,6 +20,7 @@ export default defineComponent({
     [ElConfigProvider.name]: ElConfigProvider,
   },
   setup() {
+
     provide('ec', echarts)//provide
     return {
       locale: zhCn,

@@ -6,16 +6,21 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent, onMounted, ref } from 'vue'
 
 export default defineComponent({
   setup() {
 
-
-    return {}
+    let a = ref<any>(6)
+    onMounted(() => {
+      // console.log(toFixed(a, 2));
+    })
+    return {
+      a
+    }
   }
 })
-</script>
+                                                                                                                    </script>
 
 <style scoped>
 .box {

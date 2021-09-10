@@ -42,9 +42,6 @@ http.interceptors.response.use((res: any) => {
     if (status === 400) {
         ElMessage('参数错误')
     }
-    if (status === 401) {
-        ElMessage('登录过期')
-    }
     if (status === 403) {
         ElMessage('没有全选')
     }

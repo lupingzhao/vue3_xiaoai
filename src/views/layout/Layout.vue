@@ -45,8 +45,8 @@ export default defineComponent({
         let user = ref<string>('')
         let now = ref<any>(null);
         let title = ref<any>(null)
-
-        // 定义函数
+        let a = ref<any>(null)
+        // 定义函数 时间格式
         let time = () => {
             now.value = new Date().toLocaleString() + " ".charAt(new Date().getDay());
         }
@@ -62,12 +62,13 @@ export default defineComponent({
         onMounted(() => {
             user.value = JSON.parse(localStorage.getItem('user')!).username
             time()
-            setInterval(time, 1000)
+            a.value = setInterval(time, 1000)
 
         })
         // 销毁组件  页面离开时
         onUnmounted(() => {
             clearInterval(time as any)
+            clearInterval(a.value as any)
         })
 
 

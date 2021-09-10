@@ -61,7 +61,6 @@ export default defineComponent({
         // 下一步事件
         let order = (val: number) => {
             orderindex.value[val] = val
-
         }
         // 竖向导航点击事件
         let cerStep = (val: number) => {
